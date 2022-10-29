@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    
+    background-color: rgb(3, 3, 87);
+}
+.container {
+display: grid;
+grid-template-areas: 
+"head head side"
+"content bar bar"
+"content foot foot";
+width: 1000px;
+height: 800px;
+gap: 5px;
+place-items: auto;
+padding: 5%;
+
+}
+
+
+.box1 {
+background-color: red;
+border: 2px solid black;
+grid-area: head;
+}
+.box2 {
+background-color: blue;
+border: 2px solid black;
+grid-area: side;
+}
+.box3 {
+background-color: darkorange;
+border: 2px solid black;
+grid-area: content;
+}
+.box4 {
+background-color: green;
+border: 2px solid black;
+grid-area: bar;
+}
+.box5 {
+background-color: mediumslateblue;
+border: 2px solid black;
+grid-area: foot;
+}
